@@ -1,0 +1,207 @@
+body {
+	background-image: url("images/wallpaper.gif");
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	animation: fadein 1.5s;
+}
+
+#bloc1{
+	position: absolute;
+	top:0px;
+	left: 0px;
+	width:100%;
+	height: 7.6vw;
+	background-color: transparent;
+}
+
+#titre_principal{
+	color: white;
+	opacity: 100;
+	margin-top: 15px;
+	margin-left: 15px;
+	font-size: 1.9vw;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+#titre_principal a{
+	color: white;
+	text-decoration: none;
+}
+
+.pink {
+	color: #FF2E90;
+}
+
+
+
+
+.sauvegarde{
+	position: fixed;
+	font-size:1.18vw;
+	top: 7.6vw;
+	left: 15px;
+	color:white;
+	list-style-type: none;
+	border: 2px solid;
+	border-style: dotted;
+	padding: 5px;
+	border-color: white;
+}
+
+nav > ul{
+	margin: 0px;
+	padding: 0px;
+}
+
+nav > ul > li{
+	float: left;
+	position: relative;
+}
+
+nav > li{
+	list-style-type: none;
+}
+
+.subsauvegarde{
+	height: 70vh;
+	bottom: 100px;
+	display: none;
+	list-style-type: none;
+	overflow-y: auto;
+}
+
+nav > ul::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+nav a{
+	display: inline-block;
+	text-decoration: none;
+}
+
+nav > ul > li > a{
+	text-decoration: none;
+	padding: 20px 30px;
+	color:#FFF;
+}
+
+nav li:hover .subsauvegarde{
+	display: inline-block;
+	position: absolute;
+	text-align:left;
+	top: 100%;
+	left: 0px;
+	padding: 0px;
+	z-index: 100000;
+}
+
+.subsauvegarde li{
+	text-decoration: none;
+	text-align: left;
+	/*border-bottom: 1px solid;*/
+}
+
+.subsauvegarde li a{
+	padding: 15px 30px;
+	font-size: 13px;
+	width: 150px;
+}
+
+
+nav > ul > li:hover a{
+	padding: 20px 30px 20px 30px;
+}
+
+
+.subsauvegarde a{
+	color:white;
+	text-decoration: none;
+}
+
+.sauvegarde .subsauvegarde{
+	background-color: rgba(202,144,182,0.5);
+}
+
+
+
+
+
+
+
+
+
+#container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.slide{
+  display: block;
+  position: absolute;
+  height: 80% !important;
+  width: 75% !important;
+  background-image: url("images/aloy.jpg");
+  background-position: left;
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+
+
+.sous_titre{
+	position: relative;
+	font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+	color:#727171;
+	font-size: 2.1vw;
+	text-align: center;
+	margin-top: 6.4285714vh;
+	margin-left: 51%;
+}
+
+.texte{
+	position: absolute;
+	font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+	color:#727171;
+	text-align: justify;
+	left: 52%;
+	top: 20vh;
+	bottom: 5px;
+	padding-right: 15px;
+	right: 1%;
+	line-height: 17pt;
+	overflow-y: auto;
+	overflow-x: hidden;
+
+}
+
+#aloy{
+	float: left;
+	padding-right: 10px;
+	padding-top: 5px;
+	width: 12.92vw;
+}
+
+#fleche_droite{
+	border-color: white;
+	border-width: 2px;
+	position: absolute;
+	right: 5px;
+}
+
+#fleche_gauche{
+	position: absolute;
+	left: 5px;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
